@@ -9,7 +9,7 @@ void input() {
     while (true) {
         cout << "masukan banyaknya elemen pada array : ";
         cin >> n;
-        if (n <= 20)
+        if (n <= 40)
             break;
         else {
             cout << "\nArray dapat mempunyai maksimal 40 elemen.\n";
@@ -24,7 +24,8 @@ void input() {
     for (int i = 0; i < n; i++) {
         cout << "data ke-" << (i + 1) << ": ";
         cin >> arr[i];
-
+    }
+}
 
 void insertionsort() {
     int i, n, j, temp;
@@ -42,7 +43,7 @@ void insertionsort() {
         }
 
         arr[j + 1] = temp; //step 5
-    {
+    }
  }
     void display() {
         cout << endl;
@@ -57,13 +58,12 @@ void insertionsort() {
         cout << endl;
     }
    
-}
+
     int main()
     {
-
         input();                                                    //memanggil input
-        insertionSort();                                            //memanggil insertionsort
+        insertionsort();                                            //memanggil insertionsort
         display();                                              //memanggil display
         system("pause");
-        return 0
+        return 0;
     }
