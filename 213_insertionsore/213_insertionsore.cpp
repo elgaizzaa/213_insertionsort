@@ -3,7 +3,7 @@
 
 #include <iostream>
 using namespace std;
-int arr[20];
+int arr[40];
 int n;
 void input() {
     while (true) {
@@ -12,7 +12,7 @@ void input() {
         if (n <= 20)
             break;
         else {
-            cout << "\nArray dapat mempunyai maksimal 20 elemen.\n";
+            cout << "\nArray dapat mempunyai maksimal 40 elemen.\n";
 
         }
     }
@@ -25,11 +25,12 @@ void input() {
         cout << "data ke-" << (i + 1) << ": ";
         cin >> arr[i];
 
+
 void insertionsort() {
     int i, n, j, temp;
     int arr[40];
 
-    for(i =1; i<= n-1; i++) { //step1
+    for (i = 1; i <= n - 1; i++) { //step1
         temp = arr[i]; //step 2
 
         j = i - 1; //step 3
@@ -40,8 +41,9 @@ void insertionsort() {
             j--; //step 4b 
         }
 
-            arr[j + 1] = temp; //step 5
-         }
+        arr[j + 1] = temp; //step 5
+    {
+ }
     void display() {
         cout << endl;
         cout << "===================================" << endl;
@@ -56,13 +58,12 @@ void insertionsort() {
     }
    
 }
-int main()
-input();
+    int main()
+    {
 
-
-{
-
-
-    std::cout << "Hello World!\n";
-}
-
+        input();                                                    //memanggil input
+        insertionSort();                                            //memanggil insertionsort
+        display();                                              //memanggil display
+        system("pause");
+        return 0
+    }
